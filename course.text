@@ -1,0 +1,92 @@
+Node JS Tutorial
+
+REPL
+read eval print loop
+
+CLI
+
+project start
+----------------
+
+create folder->
+app.js
+
+Global variables
+-----------------------
+no window object in Node
+but there is Globals
+
+__dirname = path to current directory
+__filename = file name
+require = function to use module
+module = info about a file module
+process = where the program is being executed
+
+------------------------------------------------------
+modules are encapsulated code only share minimum
+
+how to share a module
+
+use module.exports = {};
+
+in main file:
+use require('module path') to import module into main file
+  
+-------------------------------------------------------
+built in modules
+
+os module
+operating system modules
+const os = require('os');
+
+path module
+
+paths absolute path
+-----------------------------------------------------
+filesystem module fs module
+
+filewritesync = for synchrounous writing (readSync for reading sync)
+filewrite  = for asynchronous writing (readfile for reading async)
+
+---------------------------------------------------------
+
+http module
+
+http module is used to  create webservers and other tasks 
+related to a webserver
+
+http is the module used
+for creating a server we use
+http.createServer with two parameters request and response
+
+request is used to request an url or resource
+and response serves the resource if it's available 
+else returs error 
+
+server.listen() =>this is used to specify the port in 
+which the resource runs
+
+
+----------------------------------------------------
+npm
+node package manager
+
+npmjs.com
+
+use package, contribute package
+packages can be installed globally or locally
+globally means you can access it from any project in your 
+system
+
+local installation can only access it in the installed 
+project
+
+use -g for global installation
+
+package.json - manifest file (store important info about package)
+npm init
+npm init -y
+
+
+
+
